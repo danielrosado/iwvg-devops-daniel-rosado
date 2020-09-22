@@ -16,3 +16,4 @@
 3. Estado del código
 
 [![Build Status](https://travis-ci.org/danielrosado/iwvg-devops-daniel-rosado.svg?branch=develop)](https://travis-ci.org/danielrosado/iwvg-devops-daniel-rosado)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3Aiwvg-devops-daniel-rosado&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=es.upm.miw%3Aiwvg-devops-daniel-rosado)
