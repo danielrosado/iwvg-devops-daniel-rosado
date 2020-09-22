@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/iwvg-devops-daniel-rosado-1.0.0-SNAPSHOT.jar
