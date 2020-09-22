@@ -17,3 +17,4 @@
 
 [![Build Status](https://travis-ci.org/danielrosado/iwvg-devops-daniel-rosado.svg?branch=develop)](https://travis-ci.org/danielrosado/iwvg-devops-daniel-rosado)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3Aiwvg-devops-daniel-rosado&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=es.upm.miw%3Aiwvg-devops-daniel-rosado)
+[![BCH compliance](https://bettercodehub.com/edge/badge/danielrosado/iwvg-devops-daniel-rosado?branch=develop)](https://bettercodehub.com/)
