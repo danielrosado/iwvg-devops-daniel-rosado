@@ -12,3 +12,7 @@
    1. **Import Project**, y seleccionar la carpeta del proyecto.
    1. Marcar **Create Project from external model**, elegir **Maven**.
    1. **Next** … **Finish**.
+   
+3. Estado del código
+
+[![Build Status](https://travis-ci.org/danielrosado/iwvg-devops-daniel-rosado.svg?branch=develop)](https://travis-ci.org/danielrosado/iwvg-devops-daniel-rosado)
