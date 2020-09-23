@@ -1,6 +1,5 @@
 package es.upm.miw.iwvg_devops.code;
 
-import org.apache.commons.lang3.tuple.Pair;
 
 /**
  * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el denominador
