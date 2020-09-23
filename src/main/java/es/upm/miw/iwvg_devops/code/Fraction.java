@@ -1,5 +1,6 @@
 package es.upm.miw.iwvg_devops.code;
 
+
 /**
  * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el denominador
  * <p>
@@ -57,6 +58,56 @@ public class Fraction {
 
     public double decimal() {
         return (double) numerator / denominator;
+    }
+
+    public boolean isProper() {
+        return numerator < denominator;
+    }
+
+    public boolean isImproper() {
+        return numerator > denominator;
+    }
+
+    public boolean isEquivalent(Fraction fraction) {
+        return numerator * fraction.denominator == denominator * fraction.numerator;
+    }
+
+    public Fraction add(Fraction fraction) {
+        int gcd = gcd(denominator, fraction.denominator);
+        int den = (denominator * fraction.denominator) / gcd;
+        int num = (numerator) * (den / denominator) + (fraction.numerator) * (den / fraction.denominator);
+        Fraction sum = new Fraction(num, den);
+        sum.reduce();
+        return sum;
+    }
+
+    private int gcd(int n1, int n2) {
+        if (n2 == 0) {
+            return n1;
+        }
+        return gcd(n2, n1 % n2);
+    }
+
+    private void reduce() {
+        int gcd = gcd(numerator, denominator);
+        denominator = denominator / gcd;
+        numerator = numerator / gcd;
+    }
+
+    public Fraction multiply(Fraction fraction) {
+        int num = numerator * fraction.numerator;
+        int den = denominator * fraction.denominator;
+        Fraction mult = new Fraction(num, den);
+        mult.reduce();
+        return mult;
+    }
+
+    public Fraction divide(Fraction fraction) {
+        int num = numerator * fraction.denominator;
+        int den = denominator * fraction.numerator;
+        Fraction div = new Fraction(num, den);
+        div.reduce();
+        return div;
     }
 
     @Override
