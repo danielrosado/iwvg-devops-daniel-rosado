@@ -22,5 +22,9 @@ class SearchesTest {
                 .collect(Collectors.toList()));
     }
 
-
+    @Test
+    void testFindUserIdByAllProperFraction() {
+        assertEquals(Collections.emptyList(), new Searches().findUserIdByAllProperFraction()
+                .collect(Collectors.toList()));
+    }
 }
