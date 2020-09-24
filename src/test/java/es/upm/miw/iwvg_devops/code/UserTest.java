@@ -92,6 +92,11 @@ class UserTest {
     }
 
     @Test
+    void testFamilyNameInitials() {
+        assertEquals("D.", user.familyNameInitials());
+    }
+
+    @Test
     void testToString() {
         String userStr = "User{" +
                 "id='" + user.getId() + '\'' +

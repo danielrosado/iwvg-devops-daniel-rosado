@@ -8,7 +8,7 @@ public class Searches {
         return new UsersDatabase().findAll()
                 .filter(user -> user.getFractions().stream()
                         .anyMatch(Fraction::isProper))
-                .map(user -> user.getFamilyName().substring(0, 1));
+                .map(User::familyNameInitials);
     }
 
     // TODO:
@@ -21,9 +21,12 @@ public class Searches {
         return Stream.empty();
     }
 
-    // TODO:
     public Stream<String> findUserFamilyNameByAllNegativeSignFractionDistinct() {
-        return Stream.empty();
+        return new UsersDatabase().findAll()
+                .filter(user -> user.getFractions().stream()
+                        .allMatch(Fraction::isNegative))
+                .map(User::getFamilyName)
+                .distinct();
     }
 
 }

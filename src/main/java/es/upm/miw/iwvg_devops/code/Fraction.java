@@ -110,6 +110,10 @@ public class Fraction {
         return div;
     }
 
+    public boolean isNegative() {
+        return (numerator < 0 && denominator > 0) || (numerator > 0 && denominator < 0);
+    }
+
     @Override
     public String toString() {
         return "Fraction{" +

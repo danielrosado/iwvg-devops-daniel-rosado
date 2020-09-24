@@ -110,6 +110,13 @@ class FractionTest {
     }
 
     @Test
+    void testIsNegative() {
+        assertFalse(fraction.isNegative());
+        assertTrue(new Fraction(-1, 2).isNegative());
+        assertFalse(new Fraction(-1, -2).isNegative());
+    }
+
+    @Test
     void testToString() {
         String fractionStr = "Fraction{" +
                 "numerator=" + fraction.getNumerator() +
