@@ -19,6 +19,7 @@ public class Searches {
     }
 
     public Stream<Double> findDecimalImproperFractionByUserName(String name) {
+        // Fix something...
         return new UsersDatabase().findAll()
                 .filter(user -> user.getName().equals(name))
                 .flatMap(user -> user.getFractions().stream())
